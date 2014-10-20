@@ -16,7 +16,25 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"splash.jpg"]];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    imageView.frame = self.window.bounds;
+    [self.window addSubview:imageView];
+    //[imageView release];
+    
+    [self.window makeKeyAndVisible];
+    
+    //now fade out splash image
+    [UIView transitionWithView:self.window
+                      duration:4.0f
+                       options:UIViewAnimationOptionTransitionNone
+                    animations:^(void) {
+                        imageView.alpha = 0.0f;
+                    }
+                    completion:^(BOOL finished ){
+                        [imageView removeFromSuperview];
+                    }];
     return YES;
 }
 
@@ -41,5 +59,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
 
 @end

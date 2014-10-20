@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B503BD4619F56DD9000FCB6A /* dismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B503BD4519F56DD9000FCB6A /* dismissSegue.m */; };
+		B503BD4B19F57109000FCB6A /* Class2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B503BD4A19F57109000FCB6A /* Class2ViewController.m */; };
+		B503BD4F19F579ED000FCB6A /* Class3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B503BD4E19F579ED000FCB6A /* Class3ViewController.m */; };
+		B503BD5119F57A03000FCB6A /* Class4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B503BD5019F57A02000FCB6A /* Class4ViewController.m */; };
 		B5DA3E3019ED7AD200EDE3FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA3E2F19ED7AD200EDE3FA /* main.m */; };
 		B5DA3E3319ED7AD200EDE3FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA3E3219ED7AD200EDE3FA /* AppDelegate.m */; };
 		B5DA3E3619ED7AD200EDE3FA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA3E3519ED7AD200EDE3FA /* FirstViewController.m */; };
-		B5DA3E3919ED7AD200EDE3FA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA3E3819ED7AD200EDE3FA /* SecondViewController.m */; };
+		B5DA3E3919ED7AD200EDE3FA /* Class1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA3E3819ED7AD200EDE3FA /* Class1ViewController.m */; };
 		B5DA3E3C19ED7AD200EDE3FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DA3E3A19ED7AD200EDE3FA /* Main.storyboard */; };
 		B5DA3E3E19ED7AD200EDE3FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DA3E3D19ED7AD200EDE3FA /* Images.xcassets */; };
 		B5DA3E4119ED7AD200EDE3FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DA3E3F19ED7AD200EDE3FA /* LaunchScreen.xib */; };
 		B5DA3E4D19ED7AD200EDE3FA /* studdy_cTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA3E4C19ED7AD200EDE3FA /* studdy_cTests.m */; };
+		B5DA3E5719ED7AF800EDE3FA /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5DA3E5619ED7AF800EDE3FA /* splash.jpg */; };
+		B5DAEDF119F02ACE003087DB /* greybutton.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DAEDF019F02ACE003087DB /* greybutton.png */; };
+		B5DAEDFF19F02DE0003087DB /* plus-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DAEDFE19F02DE0003087DB /* plus-32.png */; };
+		B5DAEE0119F02DF7003087DB /* edit_user-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DAEE0019F02DF7003087DB /* edit_user-32.png */; };
+		B5DAEE0319F02E01003087DB /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DAEE0219F02E01003087DB /* home-32.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B503BD4419F56DA6000FCB6A /* dismissSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dismissSegue.h; sourceTree = "<group>"; };
+		B503BD4519F56DD9000FCB6A /* dismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dismissSegue.m; sourceTree = "<group>"; };
+		B503BD4919F570F9000FCB6A /* Class2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class2ViewController.h; sourceTree = "<group>"; };
+		B503BD4A19F57109000FCB6A /* Class2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Class2ViewController.m; sourceTree = "<group>"; };
+		B503BD4C19F5799E000FCB6A /* Class3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class3ViewController.h; sourceTree = "<group>"; };
+		B503BD4D19F579B5000FCB6A /* Class4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class4ViewController.h; sourceTree = "<group>"; };
+		B503BD4E19F579ED000FCB6A /* Class3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Class3ViewController.m; sourceTree = "<group>"; };
+		B503BD5019F57A02000FCB6A /* Class4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Class4ViewController.m; sourceTree = "<group>"; };
 		B5DA3E2A19ED7AD200EDE3FA /* studdy c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "studdy c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DA3E2E19ED7AD200EDE3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5DA3E2F19ED7AD200EDE3FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,14 +52,19 @@
 		B5DA3E3219ED7AD200EDE3FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B5DA3E3419ED7AD200EDE3FA /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		B5DA3E3519ED7AD200EDE3FA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		B5DA3E3719ED7AD200EDE3FA /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		B5DA3E3819ED7AD200EDE3FA /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B5DA3E3719ED7AD200EDE3FA /* Class1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class1ViewController.h; sourceTree = "<group>"; };
+		B5DA3E3819ED7AD200EDE3FA /* Class1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class1ViewController.m; sourceTree = "<group>"; };
 		B5DA3E3B19ED7AD200EDE3FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5DA3E3D19ED7AD200EDE3FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5DA3E4019ED7AD200EDE3FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B5DA3E4619ED7AD200EDE3FA /* studdy cTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "studdy cTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DA3E4B19ED7AD200EDE3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5DA3E4C19ED7AD200EDE3FA /* studdy_cTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = studdy_cTests.m; sourceTree = "<group>"; };
+		B5DA3E5619ED7AF800EDE3FA /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = splash.jpg; path = "../../../Downloads/fo21548f3c82-2/splash.jpg"; sourceTree = "<group>"; };
+		B5DAEDF019F02ACE003087DB /* greybutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greybutton.png; sourceTree = "<group>"; };
+		B5DAEDFE19F02DE0003087DB /* plus-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-32.png"; sourceTree = "<group>"; };
+		B5DAEE0019F02DF7003087DB /* edit_user-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit_user-32.png"; sourceTree = "<group>"; };
+		B5DAEE0219F02E01003087DB /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-32.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +110,17 @@
 				B5DA3E3219ED7AD200EDE3FA /* AppDelegate.m */,
 				B5DA3E3419ED7AD200EDE3FA /* FirstViewController.h */,
 				B5DA3E3519ED7AD200EDE3FA /* FirstViewController.m */,
-				B5DA3E3719ED7AD200EDE3FA /* SecondViewController.h */,
-				B5DA3E3819ED7AD200EDE3FA /* SecondViewController.m */,
+				B5DA3E3719ED7AD200EDE3FA /* Class1ViewController.h */,
+				B503BD4C19F5799E000FCB6A /* Class3ViewController.h */,
+				B503BD4D19F579B5000FCB6A /* Class4ViewController.h */,
+				B503BD4919F570F9000FCB6A /* Class2ViewController.h */,
+				B503BD4A19F57109000FCB6A /* Class2ViewController.m */,
+				B5DA3E3819ED7AD200EDE3FA /* Class1ViewController.m */,
+				B503BD4E19F579ED000FCB6A /* Class3ViewController.m */,
+				B503BD5019F57A02000FCB6A /* Class4ViewController.m */,
 				B5DA3E3A19ED7AD200EDE3FA /* Main.storyboard */,
+				B503BD4419F56DA6000FCB6A /* dismissSegue.h */,
+				B503BD4519F56DD9000FCB6A /* dismissSegue.m */,
 				B5DA3E3D19ED7AD200EDE3FA /* Images.xcassets */,
 				B5DA3E3F19ED7AD200EDE3FA /* LaunchScreen.xib */,
 				B5DA3E2D19ED7AD200EDE3FA /* Supporting Files */,
@@ -101,6 +131,11 @@
 		B5DA3E2D19ED7AD200EDE3FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B5DAEE0219F02E01003087DB /* home-32.png */,
+				B5DAEE0019F02DF7003087DB /* edit_user-32.png */,
+				B5DAEDFE19F02DE0003087DB /* plus-32.png */,
+				B5DAEDF019F02ACE003087DB /* greybutton.png */,
+				B5DA3E5619ED7AF800EDE3FA /* splash.jpg */,
 				B5DA3E2E19ED7AD200EDE3FA /* Info.plist */,
 				B5DA3E2F19ED7AD200EDE3FA /* main.m */,
 			);
@@ -204,7 +239,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DA3E5719ED7AF800EDE3FA /* splash.jpg in Resources */,
+				B5DAEDF119F02ACE003087DB /* greybutton.png in Resources */,
+				B5DAEE0119F02DF7003087DB /* edit_user-32.png in Resources */,
 				B5DA3E3C19ED7AD200EDE3FA /* Main.storyboard in Resources */,
+				B5DAEDFF19F02DE0003087DB /* plus-32.png in Resources */,
+				B5DAEE0319F02E01003087DB /* home-32.png in Resources */,
 				B5DA3E4119ED7AD200EDE3FA /* LaunchScreen.xib in Resources */,
 				B5DA3E3E19ED7AD200EDE3FA /* Images.xcassets in Resources */,
 			);
@@ -224,8 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DA3E3919ED7AD200EDE3FA /* SecondViewController.m in Sources */,
+				B503BD4B19F57109000FCB6A /* Class2ViewController.m in Sources */,
+				B5DA3E3919ED7AD200EDE3FA /* Class1ViewController.m in Sources */,
+				B503BD5119F57A03000FCB6A /* Class4ViewController.m in Sources */,
 				B5DA3E3319ED7AD200EDE3FA /* AppDelegate.m in Sources */,
+				B503BD4F19F579ED000FCB6A /* Class3ViewController.m in Sources */,
+				B503BD4619F56DD9000FCB6A /* dismissSegue.m in Sources */,
 				B5DA3E3619ED7AD200EDE3FA /* FirstViewController.m in Sources */,
 				B5DA3E3019ED7AD200EDE3FA /* main.m in Sources */,
 			);
@@ -418,6 +462,7 @@
 				B5DA3E5219ED7AD200EDE3FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5DA3E5319ED7AD200EDE3FA /* Build configuration list for PBXNativeTarget "studdy cTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +471,7 @@
 				B5DA3E5519ED7AD200EDE3FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
