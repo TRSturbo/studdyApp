@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"splash.jpg"]];
     imageView.contentMode = UIViewContentModeScaleAspectFill;
     imageView.frame = self.window.bounds;

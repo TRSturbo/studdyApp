@@ -13,16 +13,18 @@
 @end
 
 @implementation Class4ViewController
-
-- (IBAction)tappedShowNewView:(id)sender {
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"FirstViewController"]; // Storyboard ID
-    [self presentViewController:vc animated:FALSE completion:nil];
+{
+    NSArray *tableData;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"TestData" ofType:@"plist"];
+    NSDictionary * values=[[NSDictionary alloc] initWithContentsOfFile:plistPath];
+    tableData=[[NSArray alloc] initWithArray:[values valueForKey:@"class4"]];
+    NSLog(@"arrayValues = %@",tableData);
+    
     _titlesArray  = @[@"Time Created", @"Distance",
                       @"Members"];
 }
@@ -54,5 +56,32 @@
 {
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    // Return the number of rows in the section.
+    // Usually the number of items in your array (the one that holds your list)
+    return [tableData count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    //Where we configure the cell in each row
+    
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell;
+    
+    cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    // Configure the cell... setting the text of our cell's label
+    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    return cell;
+}
+
 
 @end
+

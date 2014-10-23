@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>class3</key>
+	<array>
+		<string>SLC 213                                   7 minutes ago</string>
+		<string>Boyd 207                                 5 minutes ago</string>
+		<string>BIO 407                                  17 minutes ago</string>
+		<string>Journalism 100                        2 minutes ago</string>
+		<string>YourPie                                    6 minutes ago</string>
+	</array>
+	<key>class4</key>
+	<array>
+		<string>SLC 213                                   7 minutes ago</string>
+		<string>Boyd 207                                 5 minutes ago</string>
+		<string>BIO 407                                  17 minutes ago</string>
+		<string>Journalism 100                        2 minutes ago</string>
+		<string>YourPie                                    6 minutes ago</string>
+	</array>
+	<key>class1</key>
+	<array>
+		<string>SLC 213                                   7 minutes ago</string>
+		<string>Boyd 207                                 5 minutes ago</string>
+		<string>BIO 407                                  17 minutes ago</string>
+		<string>Journalism 100                        2 minutes ago</string>
+		<string>YourPie                                    6 minutes ago</string>
+	</array>
+	<key>class2</key>
+	<array>
+		<string>YourPie                                    6 minutes ago</string>
+		<string>Journalism 100                        2 minutes ago</string>
+		<string>BIO 407                                  17 minutes ago</string>
+		<string>Boyd 207                                 5 minutes ago</string>
+		<string>SLC 213                                   7 minutes ago</string>
+	</array>
+</dict>
+</plist>

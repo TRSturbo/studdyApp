@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Class1ViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate>
+@interface Class1ViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *color;
 
@@ -16,9 +16,9 @@
 
 @property (strong, nonatomic)          NSArray *titlesArray;
 
-@property (weak, nonatomic) IBOutlet UIButton *tappedNavButton;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
-- (IBAction)tappedShowNewView:(id)sender;
+@property (strong, nonatomic) NSArray *content;
 
 @end
 

@@ -16,9 +16,9 @@
 
 @property (strong, nonatomic)          NSArray *titlesArray;
 
-@property (weak, nonatomic) IBOutlet UIButton *tappedNavButton;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
-- (IBAction)tappedShowNewView:(id)sender;
+@property (strong, nonatomic) NSArray *content;
 
 @end
 
