@@ -10,4 +10,8 @@
 
 @interface CreatePage : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIPickerView *picker;
+
+@property (strong, nonatomic)          NSArray *titlesArray;
+
 @end

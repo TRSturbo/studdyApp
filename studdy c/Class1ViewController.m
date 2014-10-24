@@ -60,6 +60,7 @@
         tView = [[UILabel alloc] init];
         [tView setFont:[UIFont fontWithName:@"Helvetica Neue" size:24]];
         [tView setTextColor:[UIColor whiteColor]];
+        tView.textAlignment = NSTextAlignmentCenter;
         tView.numberOfLines=3;
     }
     tView.text=[_titlesArray objectAtIndex:row];
