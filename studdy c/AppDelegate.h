@@ -16,5 +16,7 @@
 
 @property (strong, nonatomic) UIImageView *splash;
 
+@property (strong, nonatomic) UITabBarController *navigationController;
+
 @end
 
