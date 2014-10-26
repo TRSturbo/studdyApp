@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Fantastic4. All rights reserved.
 //
 
+#define Rgb2UIColor(r, g, b)  [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:1.0]
 #import "Class4ViewController.h"
 
 @interface Class4ViewController ()
@@ -99,6 +100,9 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     cell.backgroundColor = [UIColor clearColor];
+    UIView *bgColorView = [[UIView alloc] init];
+    [bgColorView setBackgroundColor:Rgb2UIColor(210, 46, 46)];
+    [cell setSelectedBackgroundView:bgColorView];
     cell.textColor = [UIColor whiteColor];
     [self.tableView setBackgroundColor:[UIColor clearColor]];
 }

@@ -2,37 +2,84 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Tip: 35 char per row</key>
+	<string></string>
+	<key>Infopage</key>
+	<array>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<key>Instructor Email</key>
+	<string>plaue@cs.uga.edu</string>
+	<key>Instructor</key>
+	<string>Chris Plaue</string>
+	<key>Class Time</key>
+	<string>M 11:15 - 12:05</string>
+	<key></key>
+	<string>TR 11:00 - 12:15</string>
+	<key>Class Location</key>
+	<string>Boyd 207</string>
+	<key>Studdy Users</key>
+	<string>23</string>
+	<key>ClassNames</key>
+	<array>
+		<string>CSCI 4800</string>
+		<string>CSCI 2670</string>
+		<string>BIOL 1108</string>
+		<string>GEOG 1111</string>
+	</array>
+	<key>class4time</key>
+	<array/>
+	<key>class3time</key>
+	<array/>
+	<key>class2time</key>
+	<array/>
+	<key>class1time</key>
+	<array/>
+	<key>New item - 5</key>
+	<string>df</string>
+	<key>New item - 4</key>
+	<string>dfd</string>
+	<key>New item - 3</key>
+	<string>dfdf</string>
+	<key>New item - 2</key>
+	<string>dfdf</string>
+	<key>New item</key>
+	<string>dfd</string>
 	<key>class3</key>
 	<array>
-		<string>SLC 213                                   7 minutes ago</string>
-		<string>Boyd 207                                 5 minutes ago</string>
-		<string>BIO 407                                  17 minutes ago</string>
-		<string>Journalism 100                        2 minutes ago</string>
-		<string>YourPie                                    6 minutes ago</string>
+		<string>SLC                                7 minutes ago</string>
+		<string>Boyd                               5 minutes ago</string>
+		<string>Biology                           17 minutes ago</string>
+		<string>Journalism                      2 minutes ago</string>
+		<string>YourPie                           6 minutes ago</string>
 	</array>
 	<key>class4</key>
 	<array>
-		<string>SLC 213                                   7 minutes ago</string>
-		<string>Boyd 207                                 5 minutes ago</string>
-		<string>BIO 407                                  17 minutes ago</string>
-		<string>Journalism 100                        2 minutes ago</string>
-		<string>YourPie                                    6 minutes ago</string>
+		<string>SLC                                7 minutes ago</string>
+		<string>Boyd                               5 minutes ago</string>
+		<string>Biology                           17 minutes ago</string>
+		<string>Journalism                      2 minutes ago</string>
+		<string>YourPie                           6 minutes ago</string>
 	</array>
 	<key>class1</key>
 	<array>
-		<string>SLC 213                                   7 minutes ago</string>
-		<string>Boyd 207                                 5 minutes ago</string>
-		<string>BIO 407                                  17 minutes ago</string>
-		<string>Journalism 100                        2 minutes ago</string>
-		<string>YourPie                                    6 minutes ago</string>
+		<string>SLC                                7 minutes ago</string>
+		<string>Boyd                               5 minutes ago</string>
+		<string>Biology                           17 minutes ago</string>
+		<string>Journalism                      2 minutes ago</string>
+		<string>YourPie                           6 minutes ago</string>
 	</array>
 	<key>class2</key>
 	<array>
-		<string>YourPie                                    6 minutes ago</string>
-		<string>Journalism 100                        2 minutes ago</string>
-		<string>BIO 407                                  17 minutes ago</string>
-		<string>Boyd 207                                 5 minutes ago</string>
-		<string>SLC 213                                   7 minutes ago</string>
+		<string>SLC                                7 minutes ago</string>
+		<string>Boyd                               5 minutes ago</string>
+		<string>Biology                           17 minutes ago</string>
+		<string>Journalism                      2 minutes ago</string>
+		<string>YourPie                           6 minutes ago</string>
 	</array>
 </dict>
 </plist>

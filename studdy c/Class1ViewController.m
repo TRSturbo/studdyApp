@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Fantastic4. All rights reserved.
 //
 
+#define Rgb2UIColor(r, g, b)  [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:1.0]
+
 #import "Class1ViewController.h"
 @interface Class1ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -27,6 +29,35 @@
     _titlesArray  = @[@"Time Created", @"Distance",
                       @"Members"];
 }
+
+/*
+{
+    NSMutableArray *tableData;
+    NSMutableArray *groupTimes;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"TestData" ofType:@"plist"];
+    NSDictionary * values=[[NSDictionary alloc] initWithContentsOfFile:plistPath];
+    tableData=[[NSMutableArray alloc] initWithArray:[values valueForKey:@"class1"]];
+    groupTimes=[[NSMutableArray alloc] initWithArray:[values valueForKey:@"class1time"]];
+    
+    for (int i = 0; i < [tableData count]; i++){
+        NSString *temp = [tableData objectAtIndex: i];
+        NSString *tempTime = [groupTimes objectAtIndex: i];
+        temp = [temp stringByAppendingString:tempTime];
+        NSLog(@"\nOUTPUT: %@", temp);
+       // addSpacing(1,5);
+        [tableData replaceObjectAtIndex:i withObject:temp];
+        //NSLog(@"\nOUTPUT: %@", temp);
+    }
+    NSLog(@"arrayValues = %@",tableData);
+    
+    _titlesArray  = @[@"Time Created", @"Distance",
+                      @"Members"];
+}*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -90,12 +121,16 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     // Configure the cell... setting the text of our cell's label
+    
     cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     cell.backgroundColor = [UIColor clearColor];
+    UIView *bgColorView = [[UIView alloc] init];
+    [bgColorView setBackgroundColor:Rgb2UIColor(65, 165, 245)];
+    [cell setSelectedBackgroundView:bgColorView];
     cell.textColor = [UIColor whiteColor];
     [self.tableView setBackgroundColor:[UIColor clearColor]];
 }
@@ -103,6 +138,15 @@
 - (UIStatusBarStyle) preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
+
+/*
+- (NSString *)addSpacing:(NSInteger *)spacing1 andSpacing:(NSInteger *)spacing2 {
+    NSString *spacingString;
+    NSLog(@"%d %d", spacing1, spacing2);
+    
+    
+    return spacingString;
+}*/
 
 
 @end

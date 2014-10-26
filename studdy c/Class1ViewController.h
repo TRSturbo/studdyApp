@@ -20,5 +20,7 @@
 
 @property (strong, nonatomic) NSArray *content;
 
+- (NSString *)addSpacing:(NSInteger *)spacing1 andSpacing:(NSInteger *)spacing2;
+
 @end
 

@@ -1,19 +1,20 @@
 //
-//  Class2ViewController.m
+//  classinfo.m
 //  studdy c
 //
-//  Created by Aaron Tharpe on 10/14/14.
+//  Created by Aaron Tharpe on 10/26/14.
 //  Copyright (c) 2014 Fantastic4. All rights reserved.
 //
 
 #define Rgb2UIColor(r, g, b)  [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:1.0]
-#import "Class2ViewController.h"
+#import "Classinfo.h"
 
-@interface Class2ViewController ()
+@interface Classinfo ()
 
 @end
 
-@implementation Class2ViewController
+
+@implementation Classinfo
 {
     NSArray *tableData;
 }
@@ -23,53 +24,16 @@
     
     NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"TestData" ofType:@"plist"];
     NSDictionary * values=[[NSDictionary alloc] initWithContentsOfFile:plistPath];
-    tableData=[[NSArray alloc] initWithArray:[values valueForKey:@"class2"]];
+    tableData=[[NSArray alloc] initWithArray:[values valueForKey:@"Infopage"]];
     NSLog(@"arrayValues = %@",tableData);
     
-    _titlesArray  = @[@"Time Created", @"Distance",
-                      @"Members"];
+    [_viewGroupsButton.layer setBorderWidth:1.0];
+    [_viewGroupsButton.layer setBorderColor:[[UIColor whiteColor] CGColor]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-// returns the number of 'columns' to display.
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
-{
-    return 1;
-    
-}
-
-// returns the # of rows in each component..
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent: (NSInteger)component
-{
-    return 3;
-    
-}
-
-- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
-{
-    UILabel* tView = (UILabel*)view;
-    if (!tView)
-    {
-        tView = [[UILabel alloc] init];
-        [tView setFont:[UIFont fontWithName:@"Helvetica Neue" size:24]];
-        [tView setTextColor:[UIColor whiteColor]];
-        tView.textAlignment = NSTextAlignmentCenter;
-        tView.numberOfLines=3;
-    }
-    tView.text=[_titlesArray objectAtIndex:row];
-    return tView;
-}
-
--(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row   forComponent:(NSInteger)component
-{
-    return [self.titlesArray objectAtIndex:row];
-}
-- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row   inComponent:(NSInteger)component
-{
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -110,6 +74,7 @@
 - (UIStatusBarStyle) preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
+
 
 
 @end
