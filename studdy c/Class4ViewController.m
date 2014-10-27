@@ -28,6 +28,11 @@
     
     _titlesArray  = @[@"Time Created", @"Distance",
                       @"Members"];
+    
+    [_createGroup.layer setBorderWidth:1.0];
+    [_createGroup.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    _createGroup.layer.cornerRadius = 10;
+    _createGroup.clipsToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -105,6 +110,15 @@
     [cell setSelectedBackgroundView:bgColorView];
     cell.textColor = [UIColor whiteColor];
     [self.tableView setBackgroundColor:[UIColor clearColor]];
+}
+
+- (IBAction)createGroup:(id)sender{
+    UIStoryboard *storyboard = self.storyboard;
+    Class4ViewController *svc = [storyboard instantiateViewControllerWithIdentifier:@"CreatePage"];
+    
+    // Configure the new view controller here.
+    
+    [self presentViewController:svc animated:YES completion:nil];
 }
 
 - (UIStatusBarStyle) preferredStatusBarStyle {

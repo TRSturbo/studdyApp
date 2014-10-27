@@ -22,7 +22,25 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *groupMember4;
 
+@property (weak, nonatomic) IBOutlet UIButton *openSpot;
+
 @property (weak, nonatomic) IBOutlet UIButton *leaveButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *joinButton;
+
+@property (weak, nonatomic) IBOutlet UILabel *availableSpots;
+
+@property (strong, nonatomic) IBOutlet UIButton *tag1;
+
+@property (strong, nonatomic) IBOutlet UIButton *tag2;
+
+@property (strong, nonatomic) IBOutlet UIButton *tag3;
+
+@property (strong, nonatomic) IBOutlet UIButton *tag4;
+
+@property (strong, nonatomic) IBOutlet UIButton *tag5;
+
+@property (strong, nonatomic) IBOutlet UIButton *tag6;
 
 @end
 

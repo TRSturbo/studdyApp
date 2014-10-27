@@ -27,15 +27,27 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"TestData" ofType:@"plist"];
     NSDictionary * values=[[NSDictionary alloc] initWithContentsOfFile:plistPath];
-    tableData=[[NSMutableArray alloc] initWithArray:[values valueForKey:@"ClassNames"]];
+    tableData=[[NSMutableArray alloc] initWithArray:[values valueForKey:@"ClassHistory"]];
+    
+    
     _button1.layer.cornerRadius = 20;
     _button1.clipsToBounds = YES;
+    [_button1.layer setBorderWidth:1.0];
+    [_button1.layer setBorderColor:[[UIColor whiteColor] CGColor]];
     _button2.layer.cornerRadius = 20;
     _button2.clipsToBounds = YES;
+    [_button2.layer setBorderWidth:1.0];
+    [_button2.layer setBorderColor:[[UIColor whiteColor] CGColor]];
     _button3.layer.cornerRadius = 20;
     _button3.clipsToBounds = YES;
+    [_button3.layer setBorderWidth:1.0];
+    [_button3.layer setBorderColor:[[UIColor whiteColor] CGColor]];
     _button4.layer.cornerRadius = 20;
     _button4.clipsToBounds = YES;
+    [_button4.layer setBorderWidth:1.0];
+    [_button4.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    [_aaron.layer setBorderWidth:1.0];
+    [_aaron.layer setBorderColor:[[UIColor whiteColor] CGColor]];
     _aaron.layer.cornerRadius = 20;
     _aaron.clipsToBounds = YES;
     
@@ -46,13 +58,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UIStatusBarStyle) preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
-
-
-
-/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
     return 1;
@@ -88,6 +93,15 @@
     [cell setSelectedBackgroundView:bgColorView];
     cell.textColor = [UIColor whiteColor];
     [self.tableView setBackgroundColor:[UIColor clearColor]];
-}*/
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIStoryboard *storyboard = self.storyboard;
+}
+
+
+- (UIStatusBarStyle) preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
     
     @end

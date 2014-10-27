@@ -29,6 +29,8 @@
     
     [_viewGroupsButton.layer setBorderWidth:1.0];
     [_viewGroupsButton.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    _viewGroupsButton.layer.cornerRadius = 10;
+    _viewGroupsButton.clipsToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning {

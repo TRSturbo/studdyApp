@@ -15,6 +15,8 @@
 		B59A4EBE19F9A9CA00AA921C /* splashtest.png in Resources */ = {isa = PBXBuildFile; fileRef = B59A4EBD19F9A9CA00AA921C /* splashtest.png */; };
 		B59A4EC019F9AA2600AA921C /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B59A4EBF19F9AA2600AA921C /* Default-667h@2x.png */; };
 		B59A4EC319F9AB2700AA921C /* LoginScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A4EC219F9AB2700AA921C /* LoginScreen.m */; };
+		B5BDA3B819FEB3C5000ADBA1 /* otherPersonPage.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BDA3B719FEB3C5000ADBA1 /* otherPersonPage.m */; };
+		B5BDA3BA19FEB5CC000ADBA1 /* BettyWhite1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5BDA3B919FEB5CC000ADBA1 /* BettyWhite1.jpg */; };
 		B5D6160519FABBFF003522E8 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D6160419FABBFF003522E8 /* TabBarController.m */; };
 		B5D6160719FAC48C003522E8 /* imbluuuuuue.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D6160619FAC48C003522E8 /* imbluuuuuue.png */; };
 		B5D6160919FAC6C1003522E8 /* greenbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D6160819FAC6C1003522E8 /* greenbutton.png */; };
@@ -31,6 +33,10 @@
 		B5D6162919FD6DBF003522E8 /* Screenshot 2014-10-26 13.54.25.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D6162819FD6DBF003522E8 /* Screenshot 2014-10-26 13.54.25.png */; };
 		B5D6162D19FD8613003522E8 /* Classinfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D6162C19FD8613003522E8 /* Classinfo.m */; };
 		B5D6425519FDA3A20066919D /* SpecificGroupPage.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D6425419FDA3A20066919D /* SpecificGroupPage.m */; };
+		B5D6425719FDE1A70066919D /* back-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D6425619FDE1A70066919D /* back-32.png */; };
+		B5D6425919FDEE3B0066919D /* studdybook.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D6425819FDEE3B0066919D /* studdybook.png */; };
+		B5D6425B19FDEF580066919D /* studdybookrotated.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D6425A19FDEF580066919D /* studdybookrotated.png */; };
+		B5D6425D19FDEFB70066919D /* studdyopenbook.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D6425C19FDEFB70066919D /* studdyopenbook.png */; };
 		B5DA3E3019ED7AD200EDE3FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA3E2F19ED7AD200EDE3FA /* main.m */; };
 		B5DA3E3319ED7AD200EDE3FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA3E3219ED7AD200EDE3FA /* AppDelegate.m */; };
 		B5DA3E3619ED7AD200EDE3FA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA3E3519ED7AD200EDE3FA /* FirstViewController.m */; };
@@ -67,6 +73,9 @@
 		B59A4EBF19F9AA2600AA921C /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		B59A4EC119F9AB1000AA921C /* LoginScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginScreen.h; sourceTree = "<group>"; };
 		B59A4EC219F9AB2700AA921C /* LoginScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginScreen.m; sourceTree = "<group>"; };
+		B5BDA3B619FEB39B000ADBA1 /* otherPersonPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = otherPersonPage.h; sourceTree = "<group>"; };
+		B5BDA3B719FEB3C5000ADBA1 /* otherPersonPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = otherPersonPage.m; sourceTree = "<group>"; };
+		B5BDA3B919FEB5CC000ADBA1 /* BettyWhite1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BettyWhite1.jpg; sourceTree = "<group>"; };
 		B5D6160319FABBD2003522E8 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		B5D6160419FABBFF003522E8 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		B5D6160619FAC48C003522E8 /* imbluuuuuue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imbluuuuuue.png; sourceTree = "<group>"; };
@@ -88,6 +97,10 @@
 		B5D6162C19FD8613003522E8 /* Classinfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Classinfo.m; path = ../Classinfo.m; sourceTree = "<group>"; };
 		B5D6425319FDA3680066919D /* SpecificGroupPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecificGroupPage.h; sourceTree = "<group>"; };
 		B5D6425419FDA3A20066919D /* SpecificGroupPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecificGroupPage.m; sourceTree = "<group>"; };
+		B5D6425619FDE1A70066919D /* back-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-32.png"; sourceTree = "<group>"; };
+		B5D6425819FDEE3B0066919D /* studdybook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = studdybook.png; sourceTree = "<group>"; };
+		B5D6425A19FDEF580066919D /* studdybookrotated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = studdybookrotated.png; sourceTree = "<group>"; };
+		B5D6425C19FDEFB70066919D /* studdyopenbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = studdyopenbook.png; sourceTree = "<group>"; };
 		B5DA3E2A19ED7AD200EDE3FA /* studdy c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "studdy c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DA3E2E19ED7AD200EDE3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5DA3E2F19ED7AD200EDE3FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -167,6 +180,8 @@
 				B5D6425419FDA3A20066919D /* SpecificGroupPage.m */,
 				B5D6161119FAD3EA003522E8 /* MePage.h */,
 				B5D6161219FAD3F6003522E8 /* MePage.m */,
+				B5BDA3B719FEB3C5000ADBA1 /* otherPersonPage.m */,
+				B5BDA3B619FEB39B000ADBA1 /* otherPersonPage.h */,
 				B5D6160319FABBD2003522E8 /* TabBarController.h */,
 				B5D6160419FABBFF003522E8 /* TabBarController.m */,
 				B59A4EC119F9AB1000AA921C /* LoginScreen.h */,
@@ -184,6 +199,11 @@
 		B5DA3E2D19ED7AD200EDE3FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B5BDA3B919FEB5CC000ADBA1 /* BettyWhite1.jpg */,
+				B5D6425C19FDEFB70066919D /* studdyopenbook.png */,
+				B5D6425A19FDEF580066919D /* studdybookrotated.png */,
+				B5D6425819FDEE3B0066919D /* studdybook.png */,
+				B5D6425619FDE1A70066919D /* back-32.png */,
 				B5D6162819FD6DBF003522E8 /* Screenshot 2014-10-26 13.54.25.png */,
 				B5D6162619FD6A3F003522E8 /* aaron.png */,
 				B5D6162419FC3853003522E8 /* edit_userwhite.png */,
@@ -310,15 +330,20 @@
 				B5D6162519FC3853003522E8 /* edit_userwhite.png in Resources */,
 				B5D6162319FC3844003522E8 /* pluswhite.png in Resources */,
 				B5D6161519FAE352003522E8 /* StuddyTransparent.png in Resources */,
+				B5BDA3BA19FEB5CC000ADBA1 /* BettyWhite1.jpg in Resources */,
 				B5D6160919FAC6C1003522E8 /* greenbutton.png in Resources */,
 				B5D6162119FC3830003522E8 /* homewhite.png in Resources */,
 				B5D6160B19FAC6F4003522E8 /* redbutton.png in Resources */,
+				B5D6425D19FDEFB70066919D /* studdyopenbook.png in Resources */,
 				B5D6162919FD6DBF003522E8 /* Screenshot 2014-10-26 13.54.25.png in Resources */,
 				B5D6162719FD6A3F003522E8 /* aaron.png in Resources */,
 				B5DA3E4119ED7AD200EDE3FA /* LaunchScreen.xib in Resources */,
 				B5D6161719FAE4AE003522E8 /* StuddyTransparentRedWhite.png in Resources */,
 				B59A4EC019F9AA2600AA921C /* Default-667h@2x.png in Resources */,
 				B55D0F5619F59D8F000E9550 /* TestData.plist in Resources */,
+				B5D6425B19FDEF580066919D /* studdybookrotated.png in Resources */,
+				B5D6425719FDE1A70066919D /* back-32.png in Resources */,
+				B5D6425919FDEE3B0066919D /* studdybook.png in Resources */,
 				B5DA3E3E19ED7AD200EDE3FA /* Images.xcassets in Resources */,
 				B5D6160D19FAC747003522E8 /* yellowbutton.png in Resources */,
 			);
@@ -343,6 +368,7 @@
 				B503BD5119F57A03000FCB6A /* Class4ViewController.m in Sources */,
 				B5DA3E3319ED7AD200EDE3FA /* AppDelegate.m in Sources */,
 				B5D6162D19FD8613003522E8 /* Classinfo.m in Sources */,
+				B5BDA3B819FEB3C5000ADBA1 /* otherPersonPage.m in Sources */,
 				B59A4EC319F9AB2700AA921C /* LoginScreen.m in Sources */,
 				B5D6161019FAD1F9003522E8 /* CreatePage.m in Sources */,
 				B503BD4F19F579ED000FCB6A /* Class3ViewController.m in Sources */,

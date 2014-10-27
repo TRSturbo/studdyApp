@@ -15,6 +15,22 @@
 
 @implementation LoginScreen
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    _passwordError.layer.cornerRadius = 10;
+    _passwordError.clipsToBounds = YES;
+    _loginButton.layer.cornerRadius = 5;
+    _loginButton.clipsToBounds = YES;
+    _backgroundButton.layer.cornerRadius = 5;
+    _backgroundButton.clipsToBounds = YES;
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if (textField == _usernameField && [_usernameField.text isEqualToString:@"Hello"]) {
@@ -39,40 +55,20 @@
         
     } else {
         NSLog(@"Nope");
-        _passwordError.text = @"Error";
+        _passwordError.text = @"Password incorrect. Please try again!";
+        [UIView animateWithDuration:0.2 animations:^(void) {
+            _passwordError.alpha = 1;
+        }];
     }
 }
 
 - (IBAction)registerButton:(id)sender{
 
     if((_usernameField.text && _usernameField.text.length > 0) && [_usernameField.text containsString:@"@"] && [_usernameField.text containsString:@".edu"] && (_passField.text && _passField.text.length > 0)){
-    
-        [UIView animateWithDuration:0.2 animations:^(void) {
-        _confirmPassword.alpha = 1;
-        _confirmPasswordField.alpha = 1;
-    }];
         
         [UIView animateWithDuration:0.2 animations:^(void) {
             _loginButton.alpha = 0;
         }];
-        
-        [UIView animateWithDuration:0.2 animations:^(void) {
-            CGRect btFrame = _registerButton.frame;
-            btFrame.origin.x = 122;
-            btFrame.origin.y = 440;
-            _registerButton.frame = btFrame;
-        }];
-    }
-    
-    if((_confirmPasswordField.text && _confirmPasswordField.text.length > 0) && [_passField.text isEqualToString:_confirmPasswordField.text]){
-        UIStoryboard *storyboard = self.storyboard;
-        FirstViewController *svc = [storyboard instantiateViewControllerWithIdentifier:@"TabBarController"];
-        
-        // Configure the new view controller here.
-        
-        [self presentViewController:svc animated:YES completion:nil];
-    } else if ((_confirmPasswordField.text && _confirmPasswordField.text.length > 0) && ![_passField.text isEqualToString:_confirmPasswordField.text]){
-        _passwordError.text = @"Error, mismatch password.";
     }
     
     

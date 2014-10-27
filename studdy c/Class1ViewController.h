@@ -18,9 +18,16 @@
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
+@property (strong, nonatomic) IBOutlet UIButton *createGroup;
+
 @property (strong, nonatomic) NSArray *content;
 
-- (NSString *)addSpacing:(NSInteger *)spacing1 andSpacing:(NSInteger *)spacing2;
+@property (strong, nonatomic) IBOutlet UILabel *createdGroup;
+
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *home;
+
+@property (strong, nonatomic) IBOutlet UIButton *moreInfo;
+
 
 @end
 

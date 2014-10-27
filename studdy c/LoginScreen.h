@@ -17,12 +17,8 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *loginButton;
 
-@property (strong, nonatomic) IBOutlet UIButton *registerButton;
+@property (strong, nonatomic) IBOutlet UIButton *backgroundButton;
 
 @property (strong, nonatomic) IBOutlet UILabel *passwordError;
-
-@property (strong, nonatomic) IBOutlet UILabel *confirmPassword;
-
-@property (strong, nonatomic) IBOutlet UITextField* confirmPasswordField;
 
 @end

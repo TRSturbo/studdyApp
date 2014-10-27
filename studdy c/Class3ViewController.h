@@ -18,6 +18,8 @@
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
+@property (strong, nonatomic) IBOutlet UIButton *createGroup;
+
 @property (strong, nonatomic) NSArray *content;
 
 @end

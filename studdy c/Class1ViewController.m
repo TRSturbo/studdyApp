@@ -28,36 +28,17 @@
     
     _titlesArray  = @[@"Time Created", @"Distance",
                       @"Members"];
+    
+    [_moreInfo.layer setBorderWidth:1.0];
+    [_moreInfo.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    _moreInfo.layer.cornerRadius = 10;
+    _moreInfo.clipsToBounds = YES;
+    
+    [_createGroup.layer setBorderWidth:1.0];
+    [_createGroup.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    _createGroup.layer.cornerRadius = 10;
+    _createGroup.clipsToBounds = YES;
 }
-
-/*
-{
-    NSMutableArray *tableData;
-    NSMutableArray *groupTimes;
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"TestData" ofType:@"plist"];
-    NSDictionary * values=[[NSDictionary alloc] initWithContentsOfFile:plistPath];
-    tableData=[[NSMutableArray alloc] initWithArray:[values valueForKey:@"class1"]];
-    groupTimes=[[NSMutableArray alloc] initWithArray:[values valueForKey:@"class1time"]];
-    
-    for (int i = 0; i < [tableData count]; i++){
-        NSString *temp = [tableData objectAtIndex: i];
-        NSString *tempTime = [groupTimes objectAtIndex: i];
-        temp = [temp stringByAppendingString:tempTime];
-        NSLog(@"\nOUTPUT: %@", temp);
-       // addSpacing(1,5);
-        [tableData replaceObjectAtIndex:i withObject:temp];
-        //NSLog(@"\nOUTPUT: %@", temp);
-    }
-    NSLog(@"arrayValues = %@",tableData);
-    
-    _titlesArray  = @[@"Time Created", @"Distance",
-                      @"Members"];
-}*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -133,6 +114,37 @@
     [cell setSelectedBackgroundView:bgColorView];
     cell.textColor = [UIColor whiteColor];
     [self.tableView setBackgroundColor:[UIColor clearColor]];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIStoryboard *storyboard = self.storyboard;
+    Class1ViewController *svc = [storyboard instantiateViewControllerWithIdentifier:@"SpecificGroupPage"];
+    
+    // Configure the new view controller here.
+    
+    [self presentViewController:svc animated:YES completion:nil];
+}
+
+- (IBAction)createGroup:(id)sender{
+        UIStoryboard *storyboard = self.storyboard;
+        Class1ViewController *svc = [storyboard instantiateViewControllerWithIdentifier:@"CreatePage"];
+        
+        // Configure the new view controller here.
+        
+        [self presentViewController:svc animated:YES completion:nil];
+    
+    [UIView animateWithDuration:7 animations:^(void) {
+        _createdGroup.alpha = 1;
+    }];
+}
+
+- (IBAction)home:(id)sender{
+    UIStoryboard *storyboard = self.storyboard;
+    Class1ViewController *svc = [storyboard instantiateViewControllerWithIdentifier:@"TabBarController"];
+    
+    // Configure the new view controller here.
+    
+    [self presentViewController:svc animated:YES completion:nil];
 }
 
 - (UIStatusBarStyle) preferredStatusBarStyle {

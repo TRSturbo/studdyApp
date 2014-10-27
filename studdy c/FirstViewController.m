@@ -23,6 +23,11 @@ LoginScreen *viewController;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [_logoutButton.layer setBorderWidth:1.0];
+    [_logoutButton.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    _logoutButton.layer.cornerRadius = 5;
+    _logoutButton.clipsToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning {
