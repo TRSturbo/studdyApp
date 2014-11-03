@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel* userName;
 
-@property (strong, nonatomic) IBOutlet UIButton *logoutButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *logoutButton;
 
 @end
 

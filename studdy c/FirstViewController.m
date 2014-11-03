@@ -23,11 +23,6 @@ LoginScreen *viewController;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    [_logoutButton.layer setBorderWidth:1.0];
-    [_logoutButton.layer setBorderColor:[[UIColor whiteColor] CGColor]];
-    _logoutButton.layer.cornerRadius = 5;
-    _logoutButton.clipsToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,9 +30,9 @@ LoginScreen *viewController;
     // Dispose of any resources that can be recreated.
 }
 
-- (UIStatusBarStyle) preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
+/*- (UIStatusBarStyle) preferredStatusBarStyle {
+ return UIStatusBarStyleLightContent;
+ }*/
 
 - (void)addBlurToView:(UIView *)view {
     UIView *blurView = nil;
@@ -56,6 +51,15 @@ LoginScreen *viewController;
     [view addSubview:blurView];
     [view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[blurView]|" options:0 metrics:0 views:NSDictionaryOfVariableBindings(blurView)]];
     [view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[blurView]|" options:0 metrics:0 views:NSDictionaryOfVariableBindings(blurView)]];
+}
+
+- (IBAction)logout:(id)sender{
+    UIStoryboard *storyboard = self.storyboard;
+    FirstViewController *svc = [storyboard instantiateViewControllerWithIdentifier:@"LoginScreen"];
+    
+    // Configure the new view controller here.
+    
+    [self presentViewController:svc animated:YES completion:nil];
 }
 
 

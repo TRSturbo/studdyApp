@@ -47,11 +47,12 @@
         
         
         UIStoryboard *storyboard = self.storyboard;
-        FirstViewController *svc = [storyboard instantiateViewControllerWithIdentifier:@"TabBarController"];
+        FirstViewController *svc = [storyboard instantiateViewControllerWithIdentifier:@"FirstViewController"];
         
         // Configure the new view controller here.
         
         [self presentViewController:svc animated:YES completion:nil];
+        
         
     } else {
         NSLog(@"Nope");

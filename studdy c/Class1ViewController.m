@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"TestData" ofType:@"plist"];
     NSDictionary * values=[[NSDictionary alloc] initWithContentsOfFile:plistPath];
     tableData=[[NSArray alloc] initWithArray:[values valueForKey:@"class1"]];
@@ -140,7 +141,7 @@
 
 - (IBAction)home:(id)sender{
     UIStoryboard *storyboard = self.storyboard;
-    Class1ViewController *svc = [storyboard instantiateViewControllerWithIdentifier:@"TabBarController"];
+    Class1ViewController *svc = [storyboard instantiateViewControllerWithIdentifier:@"FirstViewController"];
     
     // Configure the new view controller here.
     
