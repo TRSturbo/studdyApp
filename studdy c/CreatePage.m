@@ -52,7 +52,7 @@
     _tag6.clipsToBounds = YES;
     
     [_addTag.layer setBorderWidth:1.0];
-    [_addTag.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    [_addTag.layer setBorderColor:[[UIColor purpleColor] CGColor]];
     _addTag.layer.cornerRadius = 10;
     _addTag.clipsToBounds = YES;
     
