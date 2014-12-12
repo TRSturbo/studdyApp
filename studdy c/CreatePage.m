@@ -9,6 +9,8 @@
 #import "CreatePage.h"
 #import "Class1ViewController.h"
 
+#define purple2Color [UIColor colorWithRed:((r) / 125.0) green:((g) / 90.0) blue:((b) / 191.0) alpha:1.0]
+
 @interface CreatePage ()
 
 @end
@@ -52,7 +54,8 @@
     _tag6.clipsToBounds = YES;
     
     [_addTag.layer setBorderWidth:1.0];
-    [_addTag.layer setBorderColor:[[UIColor purpleColor] CGColor]];
+    //[_addTag.layer setBorderColor:[Rgb2UIColor(125, 90, 191)] CGColor];
+    [_addTag.layer setBorderColor:[[UIColor greenColor] CGColor]];
     _addTag.layer.cornerRadius = 10;
     _addTag.clipsToBounds = YES;
     
